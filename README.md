@@ -13,10 +13,10 @@ animals = animalz.get_animals_from_wiki_page()
 adjectives_to_animals = animalz.get_and_map_collateral_adjectives_to_animals_from_wiki_page()
 
 # Download images async
-download_images_asynchronously_from_animals(animals)
+animalz.download_images_asynchronously_from_animals(animals)
 
 # Create html file
-create_html_file_from_collateral_adjectives_to_animals(adjectives_to_animals, html_file_path="/tmp/whatever.html")
+animalz.create_html_file_from_collateral_adjectives_to_animals(adjectives_to_animals, html_file_path="/tmp/whatever.html")
 ```
 
 The complexity of mapping the animals is O(n).
